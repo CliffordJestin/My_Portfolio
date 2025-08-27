@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./assets/portfolio.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Clifford Jestin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Clifford Jestin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li> 
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" data-aos="fade-up" data-aos-duration="1000">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic3.jpg" alt="Clifford Jestin profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Clifford Jestin</h1>
+        <p class="section__text__p2">AI & Data Analytics</p>
+        <div class="btn-container">
+          <a href="./assets/RESUME_Clifford Jestin.pdf" target="_blank">
+            <button class="btn btn-color-2"> Download CV </button>
+          </a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/clifford-jestin/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/CliffordJestin'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-aos="fade-up">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./assets/about-ic.png" alt="Profile picture" class="about-pic" />
+        </div> -->
+        <div class="about-details-container" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="about-containers">
+            <div class="details-container experience-box ">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>0-1 year <br />AI & Data Analytics</p>
+            </div>
+            <div class="details-container education-box">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>BTech-Computer Science with Specialization in Health Informatics<br />VIT Bhopal</p>
+            </div>
+            <div class="details-container certifications-box">
+    <img src="./assets/certification.png" alt="Certification icon" class="icon" />
+    <h3>Certifications</h3>
+  <ul class="certifications-list">
+    <li>
+      <a href="https://coursera.org/verify/professional-cert/ZEV5OWOP3J0G" target="_blank">
+        IBM Certified Data Science Professional
+      </a>
+    </li>
+    <li>
+      <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/dd1abfb6d8eb4658971fb22dcf15017b" target="_blank">
+        IBM GEN AI
+      </a>
+    </li>
+    <li>
+      <a href="https://finlatics.com/certificate" target="_blank">
+        Finlatics- Data Science with Python 
+      </a>
+    </li>
+  </ul>
+</div>
+
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a Computer Science undergraduate specializing in Health Informatics, with a focus on building AI-powered solutions. My hands-on experience includes developing YOLO-based computer vision models and creating data-driven dashboards with Python, SQL, and Power BI. I am passionate about applying my skills in machine learning and data science to solve complex, real-world problems. I am currently seeking a role as a Junior AI Engineer or Data Analyst, where I can contribute to innovative projects and continue to grow my expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title" data-aos="fade-up">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container programming-databases-card" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="experience-sub-title">Programming & Databases</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container libraries-frameworks-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="experience-sub-title">Libraries & Frameworks</h2>
+            <div class="article-container scrollable-content">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Pandas / NumPy</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Matplotlib / Plotly</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Dash</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>YOLOv5 / YOLOv8</h3>
+                  <p>Computer Vision</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container tools-platforms-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            <h2 class="experience-sub-title">Tools & Platforms</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Excel / Google Sheets</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>BurpSuite</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-up">Projects</h1>
+      <div class="experience-details-container">
+    
+    <div class="about-containers">
+      <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+        <div class="article-container">
+          <img src="./assets/malaria.png" alt="Malarial Parasite Detection" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Malarial Parasite Detection</h2>
+        <p class="project-tech">Tech Stack: Python, YOLOv5, Roboflow</p>
+        <p class="project-desc">
+          Built and optimized a YOLOv5 model on 1,000+ blood smear images,
+          boosting detection accuracy by 12% and reducing false positives by 10%.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/Malarial-parasite-detection-using-YOLO'">
+            Github
+          </button>
+          <button class="btn btn-color-3 project-btn" onclick="location.href='https://your-live-demo-link.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      
+      <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="article-container">
+          <img src="./assets/job.png" alt="AI Job Market Analyzer" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Job Market Analyzer Dashboard</h2>
+        <p class="project-tech">Tech Stack: Python, Pandas, Plotly Dash</p>
+        <p class="project-desc">
+          Interactive Plotly Dash dashboard analyzing 1,000+ AI/Data job postings with
+          salary trends, skills demand, and geographic hiring insights. Deployed live on Render.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/AI-Job-Market-Analyzer'">
+            Github
+          </button>
+          <button class="btn btn-color-3 project-btn" onclick="location.href='https://ai-job-market-analyzer.onrender.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      
+      <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="article-container">
+          <img src="./assets/ai.png" alt="AI-Powered Wildlife Monitoring" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">AI-Powered Wildlife Monitoring</h2>
+        <p class="project-tech">Tech Stack: Python, YOLOv8, React</p>
+        <p class="project-desc">
+          YOLOv8-based wildlife detection system with 95% validation accuracy,
+          real-time map visualization, and automated Twilio SMS alerts.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/AI-Wildlife-Detection-and-Geolocation-based-Alert-System-'">
+            Github
+          </button>
+          <button class="btn btn-color-3 project-btn" onclick="location.href='https://colab.research.google.com/drive/15b7BuYMChaxbSXkRMhq5rU8T0y8tt30X?usp=sharing'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-containers">
+  <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+    <div class="article-container">
+      <img src="./assets/cleaning.png" alt="Data Cleaning with MySQL" class="project-img" />
+    </div>
+    <h2 class="experience-sub-title project-title">Data Cleaning with MySQL</h2>
+    <p class="project-tech">Tech Stack: SQL, MySQL</p>
+    <p class="project-desc">
+      Developed and executed a comprehensive data cleaning pipeline using MySQL,
+      resulting in a 30% reduction in data entry errors and a 15% improvement in query performance.
+    </p>
+    <div class="btn-container">
+      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/Data_Cleaning-using-MySQL'">
+        Github
+      </button>
+      <button class="btn btn-color-3 project-btn" onclick="location.href='https://your-live-demo-link.com/'">
+        Live Demo
+      </button>
+    </div>
+  </div>
+
+  <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+    <div class="article-container">
+      <img src="./assets/api.png" alt="API Key Management Dashboard" class="project-img" />
+    </div>
+    <h2 class="experience-sub-title project-title">API Key Management Dashboard</h2>
+    <p class="project-tech">Tech Stack: Python, MySQL</p>
+    <p class="project-desc">
+      Built a secure, SQL dashboard for API key management, featuring user authentication,
+      key generation, and real-time activity logging to improve security and control.
+    </p>
+    <div class="btn-container">
+      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/API_Key_Management_Dashboard'">
+        Github
+      </button>
+      <button class="btn btn-color-3 project-btn" onclick="location.href='https://your-live-demo-link.com/'">
+        Live Demo
+      </button>
+    </div>
+  </div>
+
+  <div class="details-container color-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+    <div class="article-container">
+      <img src="./assets/book.png" alt="Automated Book Pipeline" class="project-img" />
+    </div>
+    <h2 class="experience-sub-title project-title">Automated Book Pipeline</h2>
+    <p class="project-tech">Tech Stack: Python, Pandas, BeautifulSoup, HuggingFace</p>
+    <p class="project-desc">
+      Developed a Python-based pipeline to scrape, clean, and analyze book data from multiple sources,
+      automating the data ingestion process and enabling large-scale text analysis.
+    </p>
+    <div class="btn-container">
+      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CliffordJestin/Automated_Book_Pipeline'">
+        Github
+      </button>
+      <button class="btn btn-color-3 project-btn" onclick="location.href='https://colab.research.google.com/drive/1pk4BCeDdq8YhHok9wH0ZhcAGOs9sa4fc?usp=sharing'">
+        Live Demo
+      </button>
+    </div>
+  </div>
+</div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+    <section id="contact">
+      <p class="section__text__p1" data-aos="fade-up">Get in Touch</p>
+      <h1 class="title" data-aos="fade-up">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="zoom-in" data-aos-duration="1000" >
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:cliffordjestin@gmail.com">cliffordjestin@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://linkedin.com/in/clifford-jestin" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p><a href="https://github.com/CliffordJestin" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Clifford Jestin. All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
